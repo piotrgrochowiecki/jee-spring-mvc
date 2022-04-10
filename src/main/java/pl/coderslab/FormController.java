@@ -9,12 +9,12 @@ import java.time.LocalDateTime;
 @Controller
 public class FormController {
 
-    @RequestMapping("/form")
+    @GetMapping("/form")
     public String hello() {
         return "form.jsp";
     }
 
-    @PostMapping(value = "/formRequestParam", produces = "text/plain;charset=UTF-8")
+    @PostMapping(value = "/form", produces = "text/plain;charset=UTF-8")
     @ResponseBody
     public String showName(@RequestParam String paramName, @RequestParam String paramDate) {
         return "Hello " + paramName + " on " + LocalDate.parse(paramDate);

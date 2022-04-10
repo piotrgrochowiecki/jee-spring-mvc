@@ -14,7 +14,7 @@
     <title>First Form handled by Spring!</title>
 </head>
 <body>
-<form action="/formRequestParam" method="post">
+<form action="/form" method="post">
     Name:
     <input type="text" name="paramName">
     Date:
