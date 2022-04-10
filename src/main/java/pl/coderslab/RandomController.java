@@ -12,7 +12,7 @@ public class RandomController {
 
     private final Random random = new Random();
 
-    @GetMapping(value = "/random//{max}", produces = "text/plain;charset=UTF-8")
+    @GetMapping(value = "/random/{max}", produces = "text/plain;charset=UTF-8")
     @ResponseBody
     public String showRandomWithMax(@PathVariable int max) {
         int randomNumber = random.nextInt(max) + 1;
