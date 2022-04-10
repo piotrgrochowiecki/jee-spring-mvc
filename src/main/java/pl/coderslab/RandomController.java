@@ -9,7 +9,7 @@ import java.util.Random;
 @Controller
 public class RandomController {
 
-    @GetMapping("/show-random")
+    @GetMapping(value = "/show-random", produces = "text/plain;charset=UTF-8")
     @ResponseBody
     public String showRandom() {
         double random = Math.random() * 10;
